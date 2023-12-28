@@ -2,8 +2,8 @@ import csv
 import os
 neg_file_dir = './Sentiment Analysis/Movie Review Dataset/tokens/neg'
 pos_file_dir = './Sentiment Analysis/Movie Review Dataset/tokens/pos'  
-neg_txt_files = [file for file in os.listdir(neg_file_dir) if file.endswith('.txt')][:100]
-pos_txt_files = [file for file in os.listdir(pos_file_dir) if file.endswith('.txt')][:100]
+neg_txt_files = [file for file in os.listdir(neg_file_dir) if file.endswith('.txt')]
+pos_txt_files = [file for file in os.listdir(pos_file_dir) if file.endswith('.txt')]
 with open('./Sentiment Analysis/movie_review.csv', 'w', newline='') as file:
     writer = csv.writer(file) 
     writer.writerow(["Review", "Polarity"])
